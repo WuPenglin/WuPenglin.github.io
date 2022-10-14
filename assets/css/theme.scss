@@ -21,8 +21,12 @@ body, input, button, select, optgroup, textarea {
     font-family:Sen;
 }
 body {
-    line-height:1.7;
+    // line-height:1.7;
     background: url('../images/background.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
 }
 a {
     color: darken($primary, 24%);
