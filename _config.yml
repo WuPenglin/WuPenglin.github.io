@@ -1,14 +1,13 @@
 # Site
-name: "Memoirs"
-title: "Memoirs"
-description: "I will take you on the fabulous world of exploration. Travel, culture, lifestyle. Eat, Pray, Love!"
+name: "VVu Blog "
+title: "VVu Blog"
+description: "「我，走路带风。」"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 url: https://wupenglin.com
 baseurl: /WuPenglin.github.io
 google_analytics: 'UA-xxxxxxxx-1'
 disqus: 'demowebsite'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
 permalink: /:title/
 email: wupenglin@gmail.com
@@ -18,7 +17,7 @@ authors:
   WuPenglin:
     name: WuPenglin
     display_name: WuPenglin
-    avatar: 'assets/images/avatar-sal.png'
+    avatar: 'assets/images/avatar-me.png'
     email: wupenglin@gmail.com
     web: https://wupenglin.com
     twitter: https://twitter.com/wupenglin
