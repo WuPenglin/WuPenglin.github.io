@@ -259,7 +259,7 @@ img, img:hover {
         font-size:22px;
         line-height:1.4;
         a { 
-            background-image: url('{{ site.baseurl }}/assets/images/background.jpg');
+            background-image: url('../images/background.jpg');
             background-repeat: no-repeat;
             background-size: 0 100%;
             transition: background-size .6s ease;
