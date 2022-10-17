@@ -73,35 +73,36 @@
     <!--<a class="navbar-brand" href="{{ site.baseurl }}/">
         <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
     </a>-->
-    <div id="{{ author[1].name }}" class="authorbox position-relative pb-5 pt-5 mb-4 mt-4 border">   
-        <div class="row">
-            <div class="wrapavname col-md-3 text-center">
-                <img  class="author-thumb" src="{{site.baseurl}}/{{ author[1].avatar }}" alt="{{ author.display_name }}">
+    {% for author in site.authors %}   
+        <div id="{{ author[1].name }}" class="authorbox position-relative pb-5 pt-5 mb-4 mt-4 border">   
+            <div class="row">
+                <div class="wrapavname col-md-3 text-center">
+                    <img  class="author-thumb" src="{{site.baseurl}}/{{ author[1].avatar }}" alt="{{ author.display_name }}">
 
-                <p class="mt-4 mb-0 small text-center">
+                    <p class="mt-4 mb-0 small text-center">
 
-                    {% if author[1].github %}
-                    <a target="_blank" class="d-inline-block mx-1 text-dark" href="{{ author[1].github }}"><i class="fa fa-link"></i></a> 
-                    {% endif %}
+                        {% if author[1].github %}
+                        <a target="_blank" class="d-inline-block mx-1 text-dark" href="{{ author[1].github }}"><i class="fa fa-link"></i></a> 
+                        {% endif %}
 
-                    {% if author[1].web %}
-                        <a target="_blank" class="d-inline-block mx-1 text-dark" href="{{ author[1].web }}"><i class="fa fa-link"></i></a> 
-                    {% endif %}
+                        {% if author[1].web %}
+                            <a target="_blank" class="d-inline-block mx-1 text-dark" href="{{ author[1].web }}"><i class="fa fa-link"></i></a> 
+                        {% endif %}
 
-                    {% if author[1].weibo %}
-                        <a target="_blank" class="d-inline-block mx-1 text-dark" href="{{ author[1].weibo }}"><i class="fab fa-twitter"></i></a>
-                    {% endif %}
+                        {% if author[1].weibo %}
+                            <a target="_blank" class="d-inline-block mx-1 text-dark" href="{{ author[1].weibo }}"><i class="fab fa-twitter"></i></a>
+                        {% endif %}
 
-                    {% if author[1].email %}
-                        <a class="d-inline-block mx-1 text-dark" href="mailto:{{ author[1].email }}"><i class="fa fa-envelope"></i></a>
-                    {% endif %}
+                        {% if author[1].email %}
+                            <a class="d-inline-block mx-1 text-dark" href="mailto:{{ author[1].email }}"><i class="fa fa-envelope"></i></a>
+                        {% endif %}
 
-                </p>
-                
-            </div>
+                    </p>
+                    
+                </div>
+            </div> 
         </div> 
-    </div> 
-   
+    {% endfor %} 
 
     <!-- Site Tag
     ================================================== -->
