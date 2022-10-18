@@ -51,12 +51,13 @@
     <ul>
         <h3>Navigation</h3>
         <li><a href="{{ site.baseurl }}/">Home</a></li>
-        <li><a href="{{ site.baseurl }}/about">About</a></li>
+        <!-- <li><a href="{{ site.baseurl }}/about">About</a></li> -->
         <!-- <li><a href="{{ site.baseurl }}/authors">Contributors <span class="badge badge-primary">new</span></a></li> -->
-        <li><a href="{{ site.baseurl }}/authors">Contributors <span class="badge badge-primary">new</span></a></li>
         <li><a href="{{ site.baseurl }}/contact">Contact</a></li>       
     </ul>   
 </nav>
+
+{% include share.html %}
 
 {% include search-lunr.html %}
 
@@ -83,7 +84,7 @@
                     <p class="mt-4 mb-0 small text-center">
 
                         {% if author[1].github %}
-                        <a target="_blank" class="d-inline-block mx-1 text-dark" href="{{ author[1].github }}"><i class="fa-brands fa-github-alt"></i></a> 
+                        <a target="_blank" class="d-inline-block mx-1 text-dark" href="{{ author[1].github }}"><i class="fab fa-github"></i></a> 
                         {% endif %}
 
                         {% if author[1].web %}
@@ -103,7 +104,8 @@
                 </div>
                 <div class="col-md-9">
                     <h3>{{ author[1].display_name }}</h3>
-                    <p class="mt-3 mb-0">{{ site.description }}</p> 
+                    <p class="mt-3 mb-0">{{ site.description }}</p>
+                    <p class="mt-3 mb-0">CS/DLP/SE</p> 
                 </div>
             </div> 
         </div> 
