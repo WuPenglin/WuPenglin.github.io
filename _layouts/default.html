@@ -79,7 +79,10 @@
         <div id="{{ author[1].name }}" class="authorbox position-relative pb-5 pt-5 mb-4 mt-4">   
             <div class="row">
                 <div class="wrapavname col-md-3 text-center">
-                    <img  class="author-thumb" src="{{site.baseurl}}/{{ author[1].avatar }}" alt="{{ author.display_name }}">
+                    
+                    <a href="{{ site.baseurl }}/">
+                        <img  class="author-thumb" src="{{site.baseurl}}/{{ author[1].avatar }}" alt="{{ author.display_name }}">
+                    </a>
 
                     <p class="mt-4 mb-0 small text-center">
 
